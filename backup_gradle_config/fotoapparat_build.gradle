@@ -1,9 +1,8 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'kotlin-android'
-apply plugin: 'maven-publish'
 
-group = 'com.github.MarcBS'
-version = '2.7.0'
+group = 'io.fotoapparat'
 
 android {
     buildToolsVersion versions.android.buildTools
@@ -50,17 +49,3 @@ ext {
 }
 
 apply from: '../deploy.gradle'
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'com.github.MarcBS'
-                artifactId = 'Fotoapparat'
-                version = '2.7.0'
-            }
-        }
-    }
-}
