@@ -41,10 +41,9 @@ dependencies {
 
 ext {
     bintrayName = 'fotoapparat'
-
     libraryName = 'Fotoapparat'
     artifact = 'fotoapparat'
-    libraryVersion = artifactVersion
+    libraryVersion = '2.7.0'
 
     libraryDescription = 'Camera library for Android with a more user-friendly API.'
 }
