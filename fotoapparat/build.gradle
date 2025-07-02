@@ -48,8 +48,6 @@ ext {
     libraryDescription = 'Camera library for Android with a more user-friendly API.'
 }
 
-apply from: '../deploy.gradle'
-
 afterEvaluate {
     publishing {
         publications {
